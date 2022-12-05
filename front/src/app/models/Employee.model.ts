@@ -1,7 +1,7 @@
 export class Employee{
   constructor(
     public code :number,
-    public _id:String,
+    public _id?:String,
     public nom?: String,
     public prenom?: String,
     public specialite?: String,

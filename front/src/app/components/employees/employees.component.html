@@ -16,8 +16,8 @@
 			<td>{{ emp.specialite }} </td>
       <!-- add delete btn -->
       <td>
-        <button class="btn btn-danger btn-sm m-1" (click)="deleteEmployee(emp._id)">Delete</button>
-        <button class="btn btn-warning btn-sm m-1" (click)="updateEmployee(emp._id)">Edit</button>
+        <button class="btn btn-danger btn-sm m-1" (click)="deleteEmployee(emp._id!)">Delete</button>
+        <button class="btn btn-warning btn-sm m-1" (click)="updateEmployee(emp._id!)">Edit</button>
       </td>
 		</tr>
 	</tbody>

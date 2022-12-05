@@ -3,7 +3,7 @@
           <h1 *ngIf="!isEdit">Add Employee</h1>
           <h1 *ngIf="isEdit">Edit Employee</h1>
   </div>
-  <form (ngSubmit)="!isEdit ? insertData() : updateEmployee()">
+  <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">Code</label>
       <input type="number" name="code" class="form-control" [(ngModel)]="employee.code">
