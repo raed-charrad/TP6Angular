@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="text-center">
+          <h1 *ngIf="!isEdit">Add Employee</h1>
+          <h1 *ngIf="isEdit">Edit Employee</h1>
+  </div>
+  <form (ngSubmit)="!isEdit ? insertData() : updateEmployee()">
+    <div class="form-group">
+      <label for="name">Code</label>
+      <input type="number" name="code" class="form-control" [(ngModel)]="employee.code">
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="nom" class="form-control" [(ngModel)]="employee.nom">
+    </div>
+    <div class="form-group">
+      <label for="email">prenom</label>
+      <input type="text" name="prenom" class="form-control" [(ngModel)]="employee.prenom">
+    </div>
+    <div class="form-group">
+      <label for="salary">email</label>
+      <input type="text" name="email" class="form-control" [(ngModel)]="employee.email">
+    </div>
+    <div class="form-group">
+      <label for="email">specialite</label>
+      <input type="text" name="specialite" class="form-control" [(ngModel)]="employee.specialite">
+    </div>
+    <div class="form-group">
+      <label for="email">phone</label>
+      <input type="number" name="phone" class="form-control" [(ngModel)]="employee.phone">
+    </div>
+    <div class="form-group">
+      <label for="salary">CIN</label>
+      <input type="number" name="cin" class="form-control" [(ngModel)]="employee.cin">
+    </div>
+
+    <div class="form-group">
+      <label for="salary">address</label>
+      <input type="text" name="adress" class="form-control" [(ngModel)]="employee.adress">
+    </div>
+    <button class="btn btn-dark btn-sm mt-4">Valider</button>
+  </form>
+</div>

@@ -1,0 +1,4 @@
+node/node_modules/*
+node/dist/*
+Angular/node_modules/*
+Angular/dist/*
